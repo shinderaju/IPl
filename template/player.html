@@ -1,0 +1,26 @@
+<div ng-controller="player_ctrl">
+    <table class="tb1" align="center" cellspacing="20"  cellpadding="20">
+        <tr>
+            <th>player</th>
+            <th>foto</th>
+        </tr>
+        <tbody>
+            <tr ng-repeat="x in data">
+                <td>
+                    <li>Name : {{x.player_name}}</li>
+                    <li>Role : {{x.player_role}}</li>
+                    <li>Batting Style : {{x.player_batting_style}}</li>
+                    <li>Bowling Style : {{x.player_bowling_style}}</li>
+                    <li>Date of Birth : {{x.player_dob}}</li>
+                    <li>Nationality : {{x.player_nationality}}</li>
+                </td>
+                <td>
+                    <!-- <img src="{{x.player_img_url}}"></img> -->
+                    <img-url data=x.player_img_url "></img-url>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>ss

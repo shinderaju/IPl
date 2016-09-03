@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+	<script src="https://cdn.firebase.com/libs/angularfire/2.0.2/angularfire.min.js"></script>
+	<script src="app.js"></script>
+	<style media="screen">
+		body {
+			background-image: url("/home/bridgeit/Downloads/index.jpeg");
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		.home {
+			color: white;
+		}
+
+		table.tb1 {
+			border-collapse: separate;
+			border-spacing: 10px 50px;
+		}
+	</style>
+</head>
+
+<body ng-app="myApp" ng-controller="team_ctrl">
+	<div>
+		<ui-view></ui-view>s
+	</div>
+</body>
+<script src="controller/home.js"></script>
+<script src="controller/player.js"></script>
+<script src="controller/teamService.js"></script>
+<script src="controller/getImage.js"></script>
+<script src="controller/imgService.js"></script>
+<script src="directive/imgUrl.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCjBOGVGe0ehmVm089GlWIQ-_ht5UI3Rgo",
+		authDomain: "ipl2016-adcf4.firebaseapp.com",
+		databaseURL: "https://ipl2016-adcf4.firebaseio.com",
+		storageBucket: "ipl2016-adcf4.appspot.com",
+	};
+	firebase.initializeApp(config);
+</script>
+
+
+</html>
